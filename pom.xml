@@ -24,8 +24,32 @@
         <dependency>
             <groupId>com.github.javaparser</groupId>
             <artifactId>javaparser-core</artifactId>
-            <version>3.28.2</version>
+            <version>3.28.1</version>
         </dependency>
+
+        <!-- Google Cloud Platform -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-core</artifactId>
+            <version>2.43.0</version>
+        </dependency>
+
+        <!-- Google Cloud Secret Manager -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-secretmanager</artifactId>
+            <version>2.51.0</version>
+        </dependency>
+
+        <!-- Google Cloud Storage -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-storage</artifactId>
+            <version>2.44.1</version>
+        </dependency>
+
+        <!-- Apigee API Management -->
+        <!-- Add Apigee-specific dependencies here if your project requires them. -->
     </dependencies>
 
     <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
