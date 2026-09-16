@@ -1,5 +1,4 @@
-JavaParser and Maven sample
----
+## JavaParser and Maven sample
 
 This fully working sample Maven project parses and generates code with [JavaParser](http://www.javaparser.org).
 
@@ -13,7 +12,7 @@ Then, you will need to install a Java 1.8 (or higher) JDK (not JRE!), and make s
 If required, install git. If you haven't already done so, clone this sample repository with `git clone https://github.com/javaparser/javaparser-maven-sample.git`.
 
 Change to the folder of where this sample project was installed (where the pom.xml file is located).
-Now run `mvn clean install` and Maven will compile your project, 
+Now run `mvn clean install` and Maven will compile your project,
 and put the results into two jar files in the `target` directory.
 
 You can now run the sample from the command line with
@@ -27,3 +26,4 @@ How you run this code is up to you, but usually you would start by using an IDE 
 The Maven dependencies may lag behind the official releases a bit.
 
 If you notice some problems with this setup, please open an issue.
+
