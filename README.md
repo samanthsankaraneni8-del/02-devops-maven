@@ -8,7 +8,7 @@ This sample is targeted at people without [Maven](https://maven.apache.org/) exp
 To build it, you will need to download and unpack the latest (or recent) version of Maven (https://maven.apache.org/download.cgi)
 and put the `mvn` command on your path.
 
-Then, you will need to install a Java 1.8 (or higher) JDK (not JRE!), and make sure you can run `java` from the command line.
+Then you will need to install a Java 1.8 (or higher) JDK (not JRE!), and make sure you can run `java` from the command line.
 
 If required, install git. If you haven't already done so, clone this sample repository with `git clone https://github.com/javaparser/javaparser-maven-sample.git`.
 
