@@ -15,6 +15,11 @@ pipeline {
             }
         }
 
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: 'target/*-shaded.jar', fingerprint: true
+            }
+        }
     }
 }
 
