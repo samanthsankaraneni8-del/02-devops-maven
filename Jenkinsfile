@@ -15,6 +15,12 @@ pipeline {
             }
         }
 
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t javaparser-app:v1 .'
+            }
+        }
+
         stage('Archive Artifact') {
             steps {
                 archiveArtifacts artifacts: 'target/*-shaded.jar', fingerprint: true
