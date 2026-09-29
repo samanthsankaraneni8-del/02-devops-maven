@@ -20,7 +20,11 @@ pipeline {
                 sh 'docker build -t javaparser-app:v1 .'
             }
         }
-
+        stage('Trivy Scan') {
+    steps {
+        sh 'TMPDIR=/var/tmp trivy image --cache-dir /var/tmp/trivy-cache javaparser-app:v1'
+    }
+}
         stage('Archive Artifact') {
             steps {
                 archiveArtifacts artifacts: 'target/*-shaded.jar', fingerprint: true
